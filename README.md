@@ -15,15 +15,15 @@
 
 # Step-by-Step Guide
 
-1. Clone the Project from GitHub
+**1. Clone the Project from GitHub**
 
  - git clone < reository link >
 
-2. Start Jenkins (via Docker)
+**2. Start Jenkins (via Docker)**
 
 - docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
-3. Configure Jenkins
+**3. Configure Jenkins**
 
 - Go to Manage Jenkins → Global Tool Configuration
 - Add:
@@ -31,7 +31,7 @@
   - Maven (e.g., Maven 3.8.6)
 - Save
 
-4. Create Jenkins Freestyle Job
+**4. Create Jenkins Freestyle Job**
 
 - New Item → Name: java-maven-build
 - Freestyle Project
@@ -40,7 +40,7 @@
 - Goals: clean package
 - Save
 
-5. Build & Verify
+**5. Build & Verify**
  
 - Click Build Now
 - Open Console Output → You should see:
